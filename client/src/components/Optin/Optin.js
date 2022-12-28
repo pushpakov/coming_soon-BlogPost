@@ -2,8 +2,12 @@ import { useState, useEffect } from "react";
 import "./Optin.css";
 import { Col, Row, Alert } from "react-bootstrap";
 import axios from "axios"
+// import("dotenv").config();
+
 
 const Optin = () => {
+  let url = process.env.url
+  console.log(url)
   const [email, setEmail] = useState("");
   const [status,setStatus] = useState("")
 
@@ -30,7 +34,7 @@ const Optin = () => {
 
   const contact = async () => {
     try {
-        const resp = await axios.post("http://localhost:5000/contact", {email});
+        const resp = await axios.post("https://blog-post-coming-soon-server.onrender.com/contact", {email});
         setStatus(resp.data.status)
         clearFields();
 
