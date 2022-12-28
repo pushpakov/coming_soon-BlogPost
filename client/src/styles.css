@@ -13,7 +13,6 @@ body {
 
 .App {
   position: fixed;
-  display: inline-block;
   top: 0;
   left: 0;
   right: 0;
@@ -29,7 +28,6 @@ body {
 }
 
 .container {
-  position:fixed;
   width: 100%;
   margin: 10% auto;
 }
