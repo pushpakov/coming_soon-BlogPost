@@ -1,0 +1,56 @@
+.newsletter-bx {
+  margin-top: 8%;
+}
+.newsletter-bx p {
+  font-size: 14px;
+  font-weight: 100;
+}
+.newsletter-bx button {
+  color: #fff;
+  padding: 6px 22px;
+  text-transform: uppercase;
+  font-family: "Roboto Condensed", sans-serif;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: solid 2px transparent;
+  cursor: pointer;
+}
+.newsletter-bx button:hover {
+  border-color: rgba(255, 255, 255, 0.3);
+}
+.new-email-bx input {
+  width: 10%;
+  height: 25px;
+  color: #0a0a0a;
+  font-weight: 700;
+  background:#f4f5f3;
+  border: 0;
+  padding: 0 15px;
+}
+
+#modal {
+  position: fixed;
+  top: 100px;
+  left: 30%;
+  width: 500px;
+  background: #fff;
+  transition: opacity 1s;
+  box-shadow: 0 7px 2px #444;
+  z-index: 99999;
+  opacity: 0;
+}
+#modal.is_open {
+  text-align: center;
+  padding: 30px;
+}
+#modal .wrapper {
+  color: #444;
+  text-align: center;
+  padding: 30px;
+}
+.newsletter-bx h2{
+  color: rgb(245, 123, 9);
+  font-size: 18px;
+  font-weight: 100;
+  font-family: cursive;
+  align-items: center;
+}
